@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7c52e"/>
+      <stop offset="100%" stop-color="#e8753a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="180" height="180" fill="#0d0f14"/>
+
+  <!-- "MIN" text – smaller -->
+  <text x="90" y="78"
+    text-anchor="middle"
+    font-family="Arial Black, Impact, sans-serif"
+    font-weight="900"
+    font-size="38"
+    letter-spacing="8"
+    fill="url(#g)">MIN</text>
+
+  <!-- "MAX" text – larger -->
+  <text x="90" y="138"
+    text-anchor="middle"
+    font-family="Arial Black, Impact, sans-serif"
+    font-weight="900"
+    font-size="72"
+    letter-spacing="4"
+    fill="url(#g)">MAX</text>
+</svg>
