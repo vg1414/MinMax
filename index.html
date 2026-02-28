@@ -153,6 +153,7 @@
   .count-selector {
     display: flex;
     gap: 8px;
+    flex-wrap: wrap;
   }
 
   .count-btn {
@@ -289,6 +290,8 @@
     border-radius: 10px;
     padding: 14px 20px;
     text-align: center;
+    min-width: 0;
+    flex-shrink: 0;
   }
   .highlight-box .big-num {
     font-family: 'Bebas Neue', sans-serif;
@@ -410,17 +413,76 @@
     margin-top: 8px;
   }
 
+  @media (max-width: 600px) {
+    body {
+      padding: 20px 12px 48px;
+    }
+
+    header {
+      margin-bottom: 24px;
+    }
+
+    .results-header {
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .highlight-box {
+      width: 100%;
+    }
+
+    .bar-num {
+      width: 54px;
+      font-size: 0.85rem;
+    }
+
+    .bar-pct {
+      width: 46px;
+      font-size: 0.78rem;
+    }
+
+    .count-btn {
+      padding: 8px 4px;
+      font-size: 1.1rem;
+    }
+  }
+
   @media (max-width: 400px) {
+    body {
+      padding: 16px 10px 40px;
+    }
+
     .card, .results-card {
       padding: 16px;
     }
+
     .odds-label {
       width: 44px;
       font-size: 0.85rem;
     }
+
     .pct-badge {
-      width: 44px;
-      font-size: 0.75rem;
+      width: 42px;
+      font-size: 0.72rem;
+    }
+
+    .bar-num {
+      width: 46px;
+      font-size: 0.78rem;
+    }
+
+    .bar-pct {
+      width: 40px;
+      font-size: 0.72rem;
+    }
+
+    .minmax-input {
+      font-size: 1.25rem;
+      padding: 8px 10px;
+    }
+
+    .highlight-box .big-num {
+      font-size: 2.2rem;
     }
   }
 </style>

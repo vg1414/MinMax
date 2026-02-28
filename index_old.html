@@ -204,6 +204,7 @@
 
   .odds-input {
     flex: 1;
+    min-width: 0;
     background: var(--panel2);
     border: 1px solid var(--border);
     border-radius: 8px;
@@ -407,6 +408,20 @@
     color: var(--muted);
     line-height: 1.6;
     margin-top: 8px;
+  }
+
+  @media (max-width: 400px) {
+    .card, .results-card {
+      padding: 16px;
+    }
+    .odds-label {
+      width: 44px;
+      font-size: 0.85rem;
+    }
+    .pct-badge {
+      width: 44px;
+      font-size: 0.75rem;
+    }
   }
 </style>
 </head>
