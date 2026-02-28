@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favicon Alternativ — MinMax</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0d0f14;
+      color: #e8eaf0;
+      font-family: 'DM Sans', sans-serif;
+      min-height: 100vh;
+      padding: 48px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 48px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+      color: #f7c52e;
+      letter-spacing: -0.5px;
+    }
+    .subtitle {
+      color: #6b7280;
+      font-size: 14px;
+      margin-top: 6px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      width: 100%;
+      max-width: 720px;
+    }
+    .card {
+      background: #161921;
+      border: 1px solid #252a38;
+      border-radius: 16px;
+      padding: 32px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      transition: border-color 0.2s;
+    }
+    .card:hover { border-color: #f7c52e44; }
+    .card-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: #6b7280;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+    .card-name {
+      font-size: 15px;
+      font-weight: 500;
+      color: #e8eaf0;
+    }
+    .sizes {
+      display: flex;
+      align-items: flex-end;
+      gap: 20px;
+    }
+    .size-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+    .size-label {
+      font-size: 10px;
+      color: #6b7280;
+    }
+    svg.preview {
+      display: block;
+      border-radius: 20%;
+      overflow: hidden;
+    }
+    .divider {
+      width: 100%;
+      max-width: 720px;
+      height: 1px;
+      background: #252a38;
+    }
+    .browser-mock {
+      width: 100%;
+      max-width: 720px;
+    }
+    .browser-mock h2 {
+      font-size: 13px;
+      color: #6b7280;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .tab-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .tab {
+      background: #161921;
+      border: 1px solid #252a38;
+      border-radius: 8px 8px 0 0;
+      padding: 8px 16px 8px 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: #6b7280;
+      min-width: 150px;
+    }
+    .tab.active {
+      background: #1d2130;
+      color: #e8eaf0;
+      border-bottom-color: #1d2130;
+    }
+    .tab svg { flex-shrink: 0; }
+    .tab-name { font-size: 11px; }
+  </style>
+</head>
+<body>
+
+  <div style="text-align:center">
+    <h1>Favicon Alternativ</h1>
+    <p class="subtitle">Välj vilket alternativ som passar MinMax bäst</p>
+  </div>
+
+  <div class="grid">
+
+    <!-- Option A: Gradient text -->
+    <div class="card">
+      <span class="card-label">Alt. A</span>
+      <span class="card-name">Gradient text</span>
+      <div class="sizes">
+        <div class="size-group">
+          <svg class="preview" width="128" height="128" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="gA" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f7c52e"/>
+                <stop offset="100%" stop-color="#e8753a"/>
+              </linearGradient>
+            </defs>
+            <rect width="100" height="100" rx="20" fill="#0d0f14"/>
+            <text x="50" y="50" text-anchor="middle" dominant-baseline="central"
+              font-family="Arial Black, sans-serif" font-weight="900" font-size="46" letter-spacing="-2"
+              fill="url(#gA)">1X2</text>
+          </svg>
+          <span class="size-label">128px</span>
+        </div>
+        <div class="size-group">
+          <svg class="preview" width="48" height="48" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="gA2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f7c52e"/>
+                <stop offset="100%" stop-color="#e8753a"/>
+              </linearGradient>
+            </defs>
+            <rect width="100" height="100" rx="20" fill="#0d0f14"/>
+            <text x="50" y="50" text-anchor="middle" dominant-baseline="central"
+              font-family="Arial Black, sans-serif" font-weight="900" font-size="46" letter-spacing="-2"
+              fill="url(#gA2)">1X2</text>
+          </svg>
+          <span class="size-label">48px</span>
+        </div>
+        <div class="size-group">
+          <svg class="preview" width="20" height="20" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="gA3" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f7c52e"/>
+                <stop offset="100%" stop-color="#e8753a"/>
+              </linearGradient>
+            </defs>
+            <rect width="100" height="100" rx="20" fill="#0d0f14"/>
+            <text x="50" y="50" text-anchor="middle" dominant-baseline="central"
+              font-family="Arial Black, sans-serif" font-weight="900" font-size="46" letter-spacing="-2"
+              fill="url(#gA3)">1X2</text>
+          </svg>
+          <span class="size-label">20px</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Option B: Tricolor -->
+    <div class="card">
+      <span class="card-label">Alt. B</span>
+      <span class="card-name">Trefärg (1=grön, X=gul, 2=röd)</span>
+      <div class="sizes">
+        <div class="size-group">
+          <svg class="preview" width="128" height="128" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100" height="100" rx="20" fill="#0d0f14"/>
+            <text x="20" y="50" text-anchor="middle" dominant-baseline="central"
+              font-family="Arial Black, sans-serif" font-weight="900" font-size="42" fill="#3ecf8e">1</text>
+            <text x="50" y="50" text-anchor="middle" dominant-baseline="central"
+              font-family="Arial Black, sans-serif" font-weight="900" font-size="42" fill="#f7c52e">X</text>
+            <text x="80" y="50" text-anchor="middle" dominant-baseline="central"
+              font-family="Arial Black, sans-serif" font-weight="900" font-size="42" fill="#f04339">2</text>
+          </svg>
+          <span class="size-label">128px</span>
+        </div>
+        <div class="size-group">
+          <svg class="preview" width="48" height="48" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100" height="100" rx="20" fill="#0d0f14"/>
+            <text x="20" y="50" text-anchor="middle" dominant-baseline="central"
+              font-family="Arial Black, sans-serif" font-weight="900" font-size="42" fill="#3ecf8e">1</text>
+            <text x="50" y="50" text-anchor="middle" dominant-baseline="central"
+              font-family="Arial Black, sans-serif" font-weight="900" font-size="42" fill="#f7c52e">X</text>
+            <text x="80" y="50" text-anchor="middle" dominant-baseline="central"
+              font-family="Arial Black, sans-serif" font-weight="900" font-size="42" fill="#f04339">2</text>
+          </svg>
+          <span class="size-label">48px</span>
+        </div>
+        <div class="size-group">
+          <svg class="preview" width="20" height="20" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100" height="100" rx="20" fill="#0d0f14"/>
+            <text x="20" y="50" text-anchor="middle" dominant-baseline="central"
+              font-family="Arial Black, sans-serif" font-weight="900" font-size="42" fill="#3ecf8e">1</text>
+            <text x="50" y="50" text-anchor="middle" dominant-baseline="central"
+              font-family="Arial Black, sans-serif" font-weight="900" font-size="42" fill="#f7c52e">X</text>
+            <text x="80" y="50" text-anchor="middle" dominant-baseline="central"
+              font-family="Arial Black, sans-serif" font-weight="900" font-size="42" fill="#f04339">2</text>
+          </svg>
+          <span class="size-label">20px</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Option C: Gold disc -->
+    <div class="card">
+      <span class="card-label">Alt. C</span>
+      <span class="card-name">Guldskiva</span>
+      <div class="sizes">
+        <div class="size-group">
+          <svg class="preview" width="128" height="128" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="rgC" cx="38%" cy="35%" r="65%">
+                <stop offset="0%" stop-color="#ffe87a"/>
+                <stop offset="100%" stop-color="#e8753a"/>
+              </radialGradient>
+            </defs>
+            <circle cx="50" cy="50" r="48" fill="url(#rgC)"/>
+            <text x="50" y="50" text-anchor="middle" dominant-baseline="central"
+              font-family="Arial Black, sans-serif" font-weight="900" font-size="40" letter-spacing="-2"
+              fill="#0d0f14">1X2</text>
+          </svg>
+          <span class="size-label">128px</span>
+        </div>
+        <div class="size-group">
+          <svg class="preview" width="48" height="48" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="rgC2" cx="38%" cy="35%" r="65%">
+                <stop offset="0%" stop-color="#ffe87a"/>
+                <stop offset="100%" stop-color="#e8753a"/>
+              </radialGradient>
+            </defs>
+            <circle cx="50" cy="50" r="48" fill="url(#rgC2)"/>
+            <text x="50" y="50" text-anchor="middle" dominant-baseline="central"
+              font-family="Arial Black, sans-serif" font-weight="900" font-size="40" letter-spacing="-2"
+              fill="#0d0f14">1X2</text>
+          </svg>
+          <span class="size-label">48px</span>
+        </div>
+        <div class="size-group">
+          <svg class="preview" width="20" height="20" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="rgC3" cx="38%" cy="35%" r="65%">
+                <stop offset="0%" stop-color="#ffe87a"/>
+                <stop offset="100%" stop-color="#e8753a"/>
+              </radialGradient>
+            </defs>
+            <circle cx="50" cy="50" r="48" fill="url(#rgC3)"/>
+            <text x="50" y="50" text-anchor="middle" dominant-baseline="central"
+              font-family="Arial Black, sans-serif" font-weight="900" font-size="40" letter-spacing="-2"
+              fill="#0d0f14">1X2</text>
+          </svg>
+          <span class="size-label">20px</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Option D: Gradient border -->
+    <div class="card">
+      <span class="card-label">Alt. D</span>
+      <span class="card-name">Gradientram</span>
+      <div class="sizes">
+        <div class="size-group">
+          <svg class="preview" width="128" height="128" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="bgD" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#1d2130"/>
+                <stop offset="100%" stop-color="#0d0f14"/>
+              </linearGradient>
+              <linearGradient id="borderD" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f7c52e"/>
+                <stop offset="100%" stop-color="#e8753a"/>
+              </linearGradient>
+            </defs>
+            <rect width="100" height="100" rx="20" fill="url(#bgD)"/>
+            <rect x="3.5" y="3.5" width="93" height="93" rx="17" fill="none" stroke="url(#borderD)" stroke-width="3.5"/>
+            <text x="50" y="50" text-anchor="middle" dominant-baseline="central"
+              font-family="Arial Black, sans-serif" font-weight="900" font-size="44" letter-spacing="-2"
+              fill="#f7c52e">1X2</text>
+          </svg>
+          <span class="size-label">128px</span>
+        </div>
+        <div class="size-group">
+          <svg class="preview" width="48" height="48" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="bgD2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#1d2130"/>
+                <stop offset="100%" stop-color="#0d0f14"/>
+              </linearGradient>
+              <linearGradient id="borderD2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f7c52e"/>
+                <stop offset="100%" stop-color="#e8753a"/>
+              </linearGradient>
+            </defs>
+            <rect width="100" height="100" rx="20" fill="url(#bgD2)"/>
+            <rect x="3.5" y="3.5" width="93" height="93" rx="17" fill="none" stroke="url(#borderD2)" stroke-width="3.5"/>
+            <text x="50" y="50" text-anchor="middle" dominant-baseline="central"
+              font-family="Arial Black, sans-serif" font-weight="900" font-size="44" letter-spacing="-2"
+              fill="#f7c52e">1X2</text>
+          </svg>
+          <span class="size-label">48px</span>
+        </div>
+        <div class="size-group">
+          <svg class="preview" width="20" height="20" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="bgD3" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#1d2130"/>
+                <stop offset="100%" stop-color="#0d0f14"/>
+              </linearGradient>
+              <linearGradient id="borderD3" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f7c52e"/>
+                <stop offset="100%" stop-color="#e8753a"/>
+              </linearGradient>
+            </defs>
+            <rect width="100" height="100" rx="20" fill="url(#bgD3)"/>
+            <rect x="3.5" y="3.5" width="93" height="93" rx="17" fill="none" stroke="url(#borderD3)" stroke-width="3.5"/>
+            <text x="50" y="50" text-anchor="middle" dominant-baseline="central"
+              font-family="Arial Black, sans-serif" font-weight="900" font-size="44" letter-spacing="-2"
+              fill="#f7c52e">1X2</text>
+          </svg>
+          <span class="size-label">20px</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Browser tab mock -->
+  <div class="browser-mock">
+    <h2>Hur det ser ut i webbläsarfliken</h2>
+    <div class="tab-row">
+
+      <div class="tab active">
+        <svg width="16" height="16" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="gTab" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f7c52e"/>
+              <stop offset="100%" stop-color="#e8753a"/>
+            </linearGradient>
+          </defs>
+          <rect width="100" height="100" rx="20" fill="#0d0f14"/>
+          <text x="50" y="50" text-anchor="middle" dominant-baseline="central"
+            font-family="Arial Black, sans-serif" font-weight="900" font-size="46" letter-spacing="-2"
+            fill="url(#gTab)">1X2</text>
+        </svg>
+        <span class="tab-name">A — MinMax</span>
+      </div>
+
+      <div class="tab">
+        <svg width="16" height="16" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" rx="20" fill="#0d0f14"/>
+          <text x="20" y="50" text-anchor="middle" dominant-baseline="central"
+            font-family="Arial Black, sans-serif" font-weight="900" font-size="42" fill="#3ecf8e">1</text>
+          <text x="50" y="50" text-anchor="middle" dominant-baseline="central"
+            font-family="Arial Black, sans-serif" font-weight="900" font-size="42" fill="#f7c52e">X</text>
+          <text x="80" y="50" text-anchor="middle" dominant-baseline="central"
+            font-family="Arial Black, sans-serif" font-weight="900" font-size="42" fill="#f04339">2</text>
+        </svg>
+        <span class="tab-name">B — MinMax</span>
+      </div>
+
+      <div class="tab">
+        <svg width="16" height="16" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="rgTab" cx="38%" cy="35%" r="65%">
+              <stop offset="0%" stop-color="#ffe87a"/>
+              <stop offset="100%" stop-color="#e8753a"/>
+            </radialGradient>
+          </defs>
+          <circle cx="50" cy="50" r="48" fill="url(#rgTab)"/>
+          <text x="50" y="50" text-anchor="middle" dominant-baseline="central"
+            font-family="Arial Black, sans-serif" font-weight="900" font-size="40" letter-spacing="-2"
+            fill="#0d0f14">1X2</text>
+        </svg>
+        <span class="tab-name">C — MinMax</span>
+      </div>
+
+      <div class="tab">
+        <svg width="16" height="16" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bgTabD" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#1d2130"/>
+              <stop offset="100%" stop-color="#0d0f14"/>
+            </linearGradient>
+            <linearGradient id="borderTabD" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f7c52e"/>
+              <stop offset="100%" stop-color="#e8753a"/>
+            </linearGradient>
+          </defs>
+          <rect width="100" height="100" rx="20" fill="url(#bgTabD)"/>
+          <rect x="3.5" y="3.5" width="93" height="93" rx="17" fill="none" stroke="url(#borderTabD)" stroke-width="3.5"/>
+          <text x="50" y="50" text-anchor="middle" dominant-baseline="central"
+            font-family="Arial Black, sans-serif" font-weight="900" font-size="44" letter-spacing="-2"
+            fill="#f7c52e">1X2</text>
+        </svg>
+        <span class="tab-name">D — MinMax</span>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

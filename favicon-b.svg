@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="20" fill="#0d0f14"/>
+  <text x="20" y="50"
+    text-anchor="middle"
+    dominant-baseline="central"
+    font-family="Arial Black, sans-serif"
+    font-weight="900"
+    font-size="42"
+    fill="#3ecf8e">1</text>
+  <text x="50" y="50"
+    text-anchor="middle"
+    dominant-baseline="central"
+    font-family="Arial Black, sans-serif"
+    font-weight="900"
+    font-size="42"
+    fill="#f7c52e">X</text>
+  <text x="80" y="50"
+    text-anchor="middle"
+    dominant-baseline="central"
+    font-family="Arial Black, sans-serif"
+    font-weight="900"
+    font-size="42"
+    fill="#f04339">2</text>
+</svg>
